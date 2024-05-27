@@ -11,7 +11,6 @@
 # TOTAL: 3750
 
 # WeChat_Resolve
-
 DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN,dldir1.qq.com
 DOMAIN,slife.xy-asia.com
@@ -344,7 +343,6 @@ IP-CIDR6,240e:ff:f100::/44
 IP-ASN,132203
 USER-AGENT,MicroMessenger*
 USER-AGENT,WeChat*
-
 # China_All_No_Resolve
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
@@ -3105,7 +3103,6 @@ DOMAIN-SUFFIX,segmentfault.com
 DOMAIN-SUFFIX,sencdn.com
 DOMAIN-SUFFIX,seniverse.com
 DOMAIN-SUFFIX,senlinjimore.com
-DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,sf-airlines.com
 DOMAIN-SUFFIX,sf-cityrush.com
 DOMAIN-SUFFIX,sf-express.com
@@ -3370,7 +3367,6 @@ DOMAIN-SUFFIX,tencentwepark.com
 DOMAIN-SUFFIX,tencentyun.com
 DOMAIN-SUFFIX,tendbcluster.com
 DOMAIN-SUFFIX,tendis.net
-DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,tenxcloud.com
 DOMAIN-SUFFIX,test-cignacmb.com
 DOMAIN-SUFFIX,test-ipv4.com
@@ -3627,7 +3623,6 @@ DOMAIN-SUFFIX,webgame163.com
 DOMAIN-SUFFIX,webofknowledge.com
 DOMAIN-SUFFIX,webqxs.com
 DOMAIN-SUFFIX,webterren.com
-DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,wegame.com
 DOMAIN-SUFFIX,wegamedeveloper.com
 DOMAIN-SUFFIX,wegameplus.com
@@ -3640,7 +3635,6 @@ DOMAIN-SUFFIX,weilaicaijing.com
 DOMAIN-SUFFIX,weilaiyunxiao.com
 DOMAIN-SUFFIX,weiphone.com
 DOMAIN-SUFFIX,weiphone.net
-DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weiyangx.com
 DOMAIN-SUFFIX,weiyun.com
 DOMAIN-SUFFIX,welltrend-edu.com
@@ -4076,7 +4070,6 @@ USER-AGENT,AdBlock*
 USER-AGENT,Best%20Trace*
 USER-AGENT,MegaWerewolf*
 USER-AGENT,MicroMessenger%20Client
-USER-AGENT,MicroMessenger*
 USER-AGENT,MicroMessengerClient*
 USER-AGENT,Microsoft*
 USER-AGENT,Moke*
@@ -4085,7 +4078,6 @@ USER-AGENT,QQ*
 USER-AGENT,RemotePlay*
 USER-AGENT,TIM*
 USER-AGENT,TeamViewer*
-USER-AGENT,WeChat*
 USER-AGENT,WebTorrent*
 USER-AGENT,YYeTs*
 USER-AGENT,arrowio*
