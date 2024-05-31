@@ -1,0 +1,37 @@
+# Configuration for Stash
+
+rules:
+  - url-regex: kill-active-requests.com
+    action: reject
+
+scripts:
+  event:
+    network-changed:
+      name: 打断请求
+      type: event
+      event: network-changed
+      script: |
+        #!name=打断请求
+        #!desc=支持网络变化时打断连接的功能，并显示打断链接数量的弹窗提示
+        #!arguments=EVENT_SCRIPT_NAME:网络变化时打断连接,EVENT_NOTIFY:1,REQ_NOTIFY:1,TIMEOUT:10,ENGINE:auto,DISMISS:2,ICON:xmark.circle,ICON-COLOR:#C5424A,REQ_SCRIPT_NAME:通过请求手动打断连接
+        #!arguments-desc=1 为开启, 0 为关闭\n\nEVENT_SCRIPT_NAME:\n网络变化时打断连接的脚本名称\n若要禁用网络变化时打断连接这个功能, 请输入 #\n\nEVENT_NOTIFY:\n网络变化打断连接时, 是否发送通知\n\nREQ_NOTIFY:\n通过请求打断连接时, 是否发送通知\n\nTIMEOUT:\n超时, 默认为 10 秒, 为了让脚本内部超时比 Stash 脚本超时更快返回, 脚本内部会自动减 1 秒\n\nENGINE:\n默认为自动使用 webview 引擎, 可设为指定 jsc\n\nDISMISS:\n在设定的秒数后, 自动消除通知\n\nREQ_SCRIPT_NAME:\n通过请求手动打断连接的脚本名称\n若要禁用通过请求手动打断连接这个功能, 请输入 #
+
+        const stash = require('stash');
+        const urlPattern = /^https?:\/\/kill-active-requests\.com/;
+
+        function interruptRequests() {
+          let interruptedCount = 0;
+
+          stash.onRequest(urlPattern, (request) => {
+            request.reject();
+            interruptedCount++;
+          });
+
+          stash.notify('打断请求数量', `已打断 ${interruptedCount} 个请求`, {{{DISMISS}}});
+        }
+
+        interruptRequests();
+
+mitm:
+  hostname:
+    - %APPEND% kill-active-requests.com
