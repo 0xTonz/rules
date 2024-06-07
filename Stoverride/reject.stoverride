@@ -1,19 +1,20 @@
-name: 切换网络时打断所有连接并提示
-desc: 当网络切换时，中断所有当前连接并提示用户。
+name: "蜂窝与 WiFi 切换时打断连接并提示"
+desc: "当蜂窝网络（如 4G/5G）切换到 WiFi 或 WiFi 切换到蜂窝网络时，中断所有当前连接并提示用户。"
 
 # 覆写配置
 script:
   # 定义一个快捷方式脚本，当网络切换时触发
   shortcuts:
-    network-switch:
+    cellular_to_wifi:
       # 检查网络切换条件
-      trigger: event == 'network-change'
-      # 执行的动作：中断所有连接，并输出提示信息
-      actions:
-        - type: disconnect-all # 断开所有连接
-        - type: notify
-          content: 网络已切换，所有连接已中断。
+      script: |
+        if (event == 'network-change' && 
+           ((prev_network_type == 'cellular' && current_network_type == 'WiFi') || 
+           (prev_network_type == 'WiFi' && current_network_type == 'cellular'))) {
+          stash.disconnectAll();
+          stash.notify('网络已从蜂窝网络切换到 WiFi 或从 WiFi 切换到蜂窝网络，所有连接已中断。');
+        }
 
 # 定义规则，使用快捷方式脚本
 rules:
-  - SCRIPT,network-switch,REJECT
+  - SCRIPT,cellular_to_wifi,REJECT
