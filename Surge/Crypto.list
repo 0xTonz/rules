@@ -7,6 +7,11 @@
 # DOMAIN-SUFFIX: 195
 # TOTAL: 200
 DOMAIN,token-api.metaswap.codefi.network
+DOMAIN-SUFFIX,bybitglobal.com
+DOMAIN-SUFFIX,bybit.cloud
+DOMAIN-SUFFIX,bybit-global.com
+DOMAIN-SUFFIX,bybit.org
+DOMAIN-SUFFIX,byabcde.co
 DOMAIN-SUFFIX,1inch.io
 DOMAIN-SUFFIX,1ml.com
 DOMAIN-SUFFIX,aave.com
