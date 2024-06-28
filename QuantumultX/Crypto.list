@@ -57,6 +57,7 @@ HOST-SUFFIX,zb.com,Cryptocurrency
 # HOST-SUFFIX: 195
 # TOTAL: 200
 HOST,token-api.metaswap.codefi.network,Crypto
+HOST-SUFFIX,deribit.com,Crypto
 HOST-SUFFIX,1inch.io,Crypto
 HOST-SUFFIX,1ml.com,Crypto
 HOST-SUFFIX,aave.com,Crypto
