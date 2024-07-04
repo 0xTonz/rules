@@ -1,0 +1,17 @@
+scriptings:
+  - schedule:
+      name: 携程旅行[签到]
+      cron: 30 8 * * *
+      script_url: https://raw.githubusercontent.com/NobyDa/Script/master/Ctrip-DailyBonus/Ctrip.js
+      update_interval: 0
+      timeout: 300
+
+  - http_response:
+      name: 携程旅行[授权]
+      match: ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/[a-zA-Z]+Login(?:$|\?)
+      script_url: https://raw.githubusercontent.com/NobyDa/Script/master/Ctrip-DailyBonus/Ctrip.js
+      body_required: true
+
+mitm:
+  hostnames:
+    - m.ctrip.com
