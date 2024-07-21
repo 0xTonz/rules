@@ -1,0 +1,141 @@
+#!name=🍟 Fries: 🌐 DNS enhanced
+#!desc=1.域名按所属DNS进行分流解析 2.路由器地址使用系统DNS进行解析 3.特殊地址使用规范DNS进行解析
+#!author=VirgilClyne
+#!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+#!category=🍟 Fries
+
+[General]
+# ---(DNS 服务器)---
+# > 通过代理请求使用本地DNS映射结果
+use-local-host-item-for-proxy = true
+
+# > 加密DNS服务器
+# 使加密DNS请求通过代理策略执行
+encrypted-dns-follow-outbound-mode = false
+
+[Host]
+# --- CUSTOM HOSTS ---
+# > 阿里巴巴
+# refer: https://www.alidns.com
+*.alibaba.cn = server:quic://dns.alidns.com // 阿里巴巴
+*.alibaba.com.cn = server:quic://dns.alidns.com // 阿里巴巴
+*.china.alibaba.com = server:quic://dns.alidns.com // Alibaba 中国
+*.1688.com = server:quic://dns.alidns.com // 1688
+*.taobao.com = server:quic://dns.alidns.com // 淘宝
+*.tbcache.com = server:quic://dns.alidns.com // 淘宝 缓存
+*.tmall.com = server:quic://dns.alidns.com // 天猫
+*.alicdn.com = server:quic://dns.alidns.com // 阿里 CDN
+*.alikunlun.com = server:quic://dns.alidns.com // 阿里昆仑
+*.aliapp.com = server:quic://dns.alidns.com // 云引擎应用平台
+*.aliapp.org = server:quic://dns.alidns.com // 上云平台
+*.alibabausercontent.com = server:quic://dns.alidns.com // 阿里用户上传资料
+*.mmstat.com = server:quic://dns.alidns.com // mmstat 数据统计 广告追踪
+tb.cn = server:quic://dns.alidns.com // 淘宝短网址
+
+# --- CUSTOM HOSTS ---
+# > Apple
+# refer: https://support.apple.com/zh-cn/HT210060
+networking.apple = server:https://doh.dns.apple.com/dns-query // Apple
+# *.apple.com = server:https://doh.dns.apple.com/dns-query // Apple.com
+*.icloud.com = server:https://doh.dns.apple.com/dns-query // iCloud.com
+
+# > 阿里云
+# refer: https://www.alidns.com
+*.aliyun.* = server:quic://dns.alidns.com // 阿里云
+*.aliyuncdn.* = server:quic://dns.alidns.com // 阿里云 CDN
+*.aliyuncs.com = server:quic://dns.alidns.com // 阿里云 API 服务
+*.aliyunddos????.com = server:quic://dns.alidns.com // 阿里云 DDoS防护
+*.aliyundrive.com = server:quic://dns.alidns.com // 阿里云盘
+*.aliyundun.com = server:quic://dns.alidns.com // 阿里云盾
+*.aliyundunwaf.com = server:quic://dns.alidns.com // 阿里云盾 Web 应用防火墙
+*.aliyun-inc.com = server:quic://dns.alidns.com // 阿里云 内部
+
+
+# > 蚂蚁集团
+# refer: https://www.alidns.com
+*.antgroup.com = server:quic://dns.alidns.com // 蚂蚁集团
+*.antfin.com = server:quic://dns.alidns.com // 蚂蚁金服
+*.antfinancial.com = server:quic://dns.alidns.com // 蚂蚁金服
+*.alipay.com = server:quic://dns.alidns.com // 支付宝
+*.alipay.com.cn = server:quic://dns.alidns.com // 支付宝
+*.alipaydns.com = server:quic://dns.alidns.com // 支付宝 HTTP DNS
+*.alipayeshop.com = server:quic://dns.alidns.com // 支付宝 商家资源
+*.alipaylog.com = server:quic://dns.alidns.com // 支付宝 Mdap
+*.alipayobjects.com = server:quic://dns.alidns.com // 支付宝 静态资源
+*.alipay-eco.com = server:quic://dns.alidns.com // 支付宝 开放技术生态体系
+
+# > 腾讯
+# refer: https://www.dnspod.cn/products/publicdns
+*.tencent.com = server:https://doh.pub/dns-query // 腾讯
+*.qcloud.com = server:https://doh.pub/dns-query // 腾讯云
+*.qcloudcdn.cn = server:https://doh.pub/dns-query // 腾讯云CDN
+*.qcloudcdn.com = server:https://doh.pub/dns-query // 腾讯云CDN
+*.qcloudcos.com = server:https://doh.pub/dns-query // 腾讯云对象储存
+*.qcloudimg.com = server:https://doh.pub/dns-query // 腾讯云静态资源
+*.qcloudcjgj.com = server:https://doh.pub/dns-query // 腾讯云超级管家
+*.qcloudwzgj.com = server:https://doh.pub/dns-query // 腾讯云网站管家
+*.qcloudzygj.com = server:https://doh.pub/dns-query // 腾讯云主页管家
+*.myqcloud.com = server:https://doh.pub/dns-query // 腾讯开放云
+*.tencent-cloud.net = server:https://doh.pub/dns-query // 腾讯云
+*.tencentcloud-aiot.com = server:https://doh.pub/dns-query // 腾讯云aiot解决方案
+*.tencentcloudapi.com = server:https://doh.pub/dns-query // 腾讯云API
+*.tencentcloudcr.com = server:https://doh.pub/dns-query // 腾讯云容器镜像服务TCR
+*.tencentcloudmarket.com = server:https://doh.pub/dns-query // 腾讯云云市场
+*.qq.com = server:https://doh.pub/dns-query // QQ
+*.qlogo.cn = server:https://doh.pub/dns-query // 腾讯头像
+*.qpic.cn = server:https://doh.pub/dns-query // 腾讯图片
+*.weixin.qq.com = server:https://doh.pub/dns-query // 微信
+*.wx.qq.com = server:https://doh.pub/dns-query // 微信
+*.weixin.com = server:https://doh.pub/dns-query // 微信
+*.weixinbridge.com = server:https://doh.pub/dns-query // 微信公众平台
+*.wechat.com = server:https://doh.pub/dns-query // WeChat
+*.servicewechat.com = server:https://doh.pub/dns-query // 微信小程序
+*.weiyun.com = server:https://doh.pub/dns-query // 微云
+*.gtimg.cn = server:https://doh.pub/dns-query // 腾讯 图片 静态资源
+*.idqqimg.com = server:https://doh.pub/dns-query // 腾讯 图片 静态资源
+*.cdn-go.cn = server:https://doh.pub/dns-query // 腾讯 静态资源 CDN
+*.smtcdns.com = server:https://doh.pub/dns-query // 腾讯云 智能云解析DNS
+*.smtcdns.net = server:https://doh.pub/dns-query // 腾讯云 智能云解析DNS
+url.cn = server:https://doh.pub/dns-query // 腾讯短网址
+
+# > Bytedance
+# refer: https://www.volcengine.com/docs/6758/179060
+*.amemv.com = server:180.184.1.1 // 艾特迷
+*.bdxiguaimg.com = server:180.184.1.1 // 西瓜 图片服务
+*.bdxiguastatic.com = server:180.184.1.1 // 西瓜 静态资源
+*.byted-static.com = server:180.184.1.1 // 字节跳动 UNPKG
+*.bytedance.* = server:180.184.1.1 // 字节跳动
+*.bytedns.net = server:180.184.1.1 // 字节跳动 DNS
+*.bytednsdoc.com = server:180.184.1.1 // 字节跳动 CDN 文件存储
+*.bytegoofy.com = server:180.184.1.1 // 字节跳动 Goofy
+*.byteimg.com = server:180.184.1.1 // 字节跳动 图片服务
+*.bytescm.com = server:180.184.1.1 // 字节跳动 SCM
+*.bytetos.com = server:180.184.1.1 // 字节跳动 TOS
+*.bytexservice.com = server:180.184.1.1 // 飞书企业服务平台
+*.douyin.com = server:180.184.1.1 // 抖音
+*.douyinpic.com = server:180.184.1.1 // 抖音 静态资源
+*.douyinstatic.com = server:180.184.1.1 // 抖音 静态资源
+*.douyinvod.com = server:180.184.1.1 // 抖音 静态资源
+*.feelgood.cn = server:180.184.1.1 // FeelGood平台
+*.feiliao.com = server:180.184.1.1 // 飞聊官网
+*.gifshow.com = server:180.184.1.1 // 快手
+*.huoshan.com = server:180.184.1.1 // 火山网
+*.huoshanzhibo.com = server:180.184.1.1 // 火山直播
+*.ibytedapm.com = server:180.184.1.1 // 抖音 dapm
+*.iesdouyin.com = server:180.184.1.1 // 抖音 CDN
+*.ixigua.com = server:180.184.1.1 // 西瓜视频
+*.kspkg.com = server:180.184.1.1 // 快手
+*.pstatp.com = server:180.184.1.1 // 抖音 静态资源
+*.snssdk.com = server:180.184.1.1 // 今日头条
+*.toutiao.com = server:180.184.1.1 // 今日头条
+*.toutiao13.com = server:180.184.1.1 // 今日头条
+*.toutiao???.??? = server:180.184.1.1 // 今日头条 静态资源
+*.toutiaocloud.cn = server:180.184.1.1 // 头条云
+*.toutiaocloud.com = server:180.184.1.1 // 头条云
+*.toutiaopage.com = server:180.184.1.1 // 今日头条 建站
+*.wukong.com = server:180.184.1.1 // 悟空
+*.zijieapi.com = server:180.184.1.1 // 字节跳动 API
+*.zijieimg.com = server:180.184.1.1 // 字节跳动 图片服务
+*.zjbyte.com = server:180.184.1.1 // 今日头条 网页版
+*.zjcdn.com = server:180.184.1.1 // 字节跳动 CDN
