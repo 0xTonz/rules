@@ -54,16 +54,16 @@ networking.apple = server:syslib // Apple
 
 # > 蚂蚁集团
 # refer: https://www.alidns.com
-*.antgroup.com = server:quic://dns.alidns.com // 蚂蚁集团
-*.antfin.com = server:quic://dns.alidns.com // 蚂蚁金服
-*.antfinancial.com = server:quic://dns.alidns.com // 蚂蚁金服
-*.alipay.com = server:quic://dns.alidns.com // 支付宝
-*.alipay.com.cn = server:quic://dns.alidns.com // 支付宝
-*.alipaydns.com = server:quic://dns.alidns.com // 支付宝 HTTP DNS
-*.alipayeshop.com = server:quic://dns.alidns.com // 支付宝 商家资源
-*.alipaylog.com = server:quic://dns.alidns.com // 支付宝 Mdap
-*.alipayobjects.com = server:quic://dns.alidns.com // 支付宝 静态资源
-*.alipay-eco.com = server:quic://dns.alidns.com // 支付宝 开放技术生态体系
+*.antgroup.com = server:223.5.5.5 // 蚂蚁集团
+*.antfin.com = server:223.5.5.5 // 蚂蚁金服
+*.antfinancial.com = server:223.5.5.5 // 蚂蚁金服
+*.alipay.com = server:223.5.5.5 // 支付宝
+*.alipay.com.cn = server:223.5.5.5 // 支付宝
+*.alipaydns.com = server:223.5.5.5 // 支付宝 HTTP DNS
+*.alipayeshop.com = server:223.5.5.5 // 支付宝 商家资源
+*.alipaylog.com = server:223.5.5.5 // 支付宝 Mdap
+*.alipayobjects.com = server:223.5.5.5 // 支付宝 静态资源
+*.alipay-eco.com = server:223.5.5.5 // 支付宝 开放技术生态体系
 
 # > 腾讯
 # refer: https://www.dnspod.cn/products/publicdns
@@ -101,41 +101,42 @@ url.cn = server:syslib // 腾讯短网址
 
 # > Bytedance
 # refer: https://www.volcengine.com/docs/6758/179060
-*.amemv.com = server:180.184.1.1 // 艾特迷
-*.bdxiguaimg.com = server:180.184.1.1 // 西瓜 图片服务
-*.bdxiguastatic.com = server:180.184.1.1 // 西瓜 静态资源
-*.byted-static.com = server:180.184.1.1 // 字节跳动 UNPKG
-*.bytedance.* = server:180.184.1.1 // 字节跳动
-*.bytedns.net = server:180.184.1.1 // 字节跳动 DNS
-*.bytednsdoc.com = server:180.184.1.1 // 字节跳动 CDN 文件存储
-*.bytegoofy.com = server:180.184.1.1 // 字节跳动 Goofy
-*.byteimg.com = server:180.184.1.1 // 字节跳动 图片服务
-*.bytescm.com = server:180.184.1.1 // 字节跳动 SCM
-*.bytetos.com = server:180.184.1.1 // 字节跳动 TOS
-*.bytexservice.com = server:180.184.1.1 // 飞书企业服务平台
-*.douyin.com = server:180.184.1.1 // 抖音
-*.douyinpic.com = server:180.184.1.1 // 抖音 静态资源
-*.douyinstatic.com = server:180.184.1.1 // 抖音 静态资源
-*.douyinvod.com = server:180.184.1.1 // 抖音 静态资源
-*.feelgood.cn = server:180.184.1.1 // FeelGood平台
-*.feiliao.com = server:180.184.1.1 // 飞聊官网
-*.gifshow.com = server:180.184.1.1 // 快手
-*.huoshan.com = server:180.184.1.1 // 火山网
-*.huoshanzhibo.com = server:180.184.1.1 // 火山直播
-*.ibytedapm.com = server:180.184.1.1 // 抖音 dapm
-*.iesdouyin.com = server:180.184.1.1 // 抖音 CDN
-*.ixigua.com = server:180.184.1.1 // 西瓜视频
-*.kspkg.com = server:180.184.1.1 // 快手
-*.pstatp.com = server:180.184.1.1 // 抖音 静态资源
-*.snssdk.com = server:180.184.1.1 // 今日头条
-*.toutiao.com = server:180.184.1.1 // 今日头条
-*.toutiao13.com = server:180.184.1.1 // 今日头条
-*.toutiao???.??? = server:180.184.1.1 // 今日头条 静态资源
-*.toutiaocloud.cn = server:180.184.1.1 // 头条云
-*.toutiaocloud.com = server:180.184.1.1 // 头条云
-*.toutiaopage.com = server:180.184.1.1 // 今日头条 建站
-*.wukong.com = server:180.184.1.1 // 悟空
-*.zijieapi.com = server:180.184.1.1 // 字节跳动 API
-*.zijieimg.com = server:180.184.1.1 // 字节跳动 图片服务
-*.zjbyte.com = server:180.184.1.1 // 今日头条 网页版
-*.zjcdn.com = server:180.184.1.1 // 字节跳动 CDN
+*.amemv.com = server:syslib // 艾特迷
+*.bdxiguaimg.com = server:syslib // 西瓜 图片服务
+*.bdxiguastatic.com = server:syslib // 西瓜 静态资源
+*.byted-static.com = server:syslib // 字节跳动 UNPKG
+*.bytedance.* = server:syslib // 字节跳动
+*.bytedns.net = server:syslib // 字节跳动 DNS
+*.bytednsdoc.com = server:syslib // 字节跳动 CDN 文件存储
+*.bytegoofy.com = server:syslib // 字节跳动 Goofy
+*.byteimg.com = server:syslib // 字节跳动 图片服务
+*.bytescm.com = server:syslib // 字节跳动 SCM
+*.bytetos.com = server:syslib // 字节跳动 TOS
+*.bytexservice.com = server:syslib // 飞书企业服务平台
+*.douyin.com = server:syslib // 抖音
+*.douyinpic.com = server:syslib // 抖音 静态资源
+*.douyinstatic.com = server:syslib // 抖音 静态资源
+*.douyinvod.com = server:syslib // 抖音 静态资源
+*.feelgood.cn = server:syslib // FeelGood平台
+*.feiliao.com = server:syslib // 飞聊官网
+*.gifshow.com = server:syslib // 快手
+*.huoshan.com = server:syslib // 火山网
+*.huoshanzhibo.com = server:syslib // 火山直播
+*.ibytedapm.com = server:syslib // 抖音 dapm
+*.iesdouyin.com = server:syslib // 抖音 CDN
+*.ixigua.com = server:syslib // 西瓜视频
+*.kspkg.com = server:syslib // 快手
+*.pstatp.com = server:syslib // 抖音 静态资源
+*.snssdk.com = server:syslib // 今日头条
+*.toutiao.com = server:syslib // 今日头条
+*.toutiao13.com = server:syslib // 今日头条
+*.toutiao???.??? = server:syslib // 今日头条 静态资源
+*.toutiaocloud.cn = server:syslib // 头条云
+*.toutiaocloud.com = server:syslib // 头条云
+*.toutiaopage.com = server:syslib // 今日头条 建站
+*.wukong.com = server:syslib // 悟空
+*.zijieapi.com = server:syslib // 字节跳动 API
+*.zijieimg.com = server:syslib // 字节跳动 图片服务
+*.zjbyte.com = server:syslib // 今日头条 网页版
+*.zjcdn.com = server:syslib // 字节跳动 CDN
+
