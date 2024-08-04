@@ -2,6 +2,7 @@ no_resolve: true
 domain_set:
 - token-api.metaswap.codefi.network
 domain_suffix_set:
+- cnouyi.pizza
 - aex.com
 - aicoin.com
 - aimoon.com
