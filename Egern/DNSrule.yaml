@@ -7,6 +7,168 @@ domain_set:
 - www.intel.cn
 - ocsp.digicert.cn
 domain_suffix_set:
+# > Router Admin Panel
+- id.ui.direct    
+- unifi.local  
+- amplifi.lan 
+- router.synology.com  
+- sila.razer.com  
+- router.asus.com  
+- routerlogin.net 
+- orbilogin.com  
+- www.LinksysSmartWiFi.com  
+- LinksysSmartWiFi.com  
+- myrouter.local 
+- instant.arubanetworks.com  
+- setmeup.arubanetworks.com  
+- www.miwifi.com 
+- miwifi.com  
+- mediarouter.home  
+- tplogin.cn 
+- tplinklogin.net  
+- tplinkwifi.net 
+- melogin.cn  
+- falogin.cn 
+- tendawifi.com 
+- leike.cc 
+- zte.home  
+- p.to 
+- phicomm.me  
+- hiwifi.com  
+- peiluyou.com  
+- _hotspot_.m2m 
+- hotspot.cslwifi.com 
+
+- apple.com 
+- icloud.com
+
+# > 阿里巴巴
+# refer: https://www.alidns.com
+- alibaba.cn 
+- alibaba.com.cn 
+- china.alibaba.com
+- 1688.com
+- taobao.com
+- tbcache.com
+- tmall.com 
+- alicdn.com
+- alikunlun.com
+- aliapp.com
+- aliapp.org
+- alibabausercontent.com
+- mmstat.com
+- tb.cn
+
+# > 阿里云
+# refer: https://www.alidns.com
+- aliyun.com
+- aliyuncdn.com
+- aliyuncs.com 
+- aliyundrive.com 
+- aliyundun.com 
+- aliyundunwaf.com 
+- aliyun-inc.com 
+ 
+# > 蚂蚁集团
+# refer: https://www.alidns.com
+- antgroup.com 
+- antfin.com  
+- antfinancial.com  
+- alipay.com  
+- alipay.com.cn  
+- alipaydns.com  
+- alipayeshop.com  
+- alipaylog.com  
+- alipayobjects.com  
+- alipay-eco.com 
+ 
+# > 腾讯
+# refer: https://www.dnspod.cn/products/publicdns
+- tencent.com 
+- qcloud.com  
+- qcloudcdn.cn  
+- qcloudcdn.com 
+- qcloudcos.com 
+- qcloudimg.com  
+- qcloudcjgj.com  
+- qcloudwzgj.com  
+- qcloudzygj.com 
+- myqcloud.com  
+- tencent-cloud.net  
+- tencentcloud-aiot.com 
+- tencentcloudapi.com  
+- tencentcloudcr.com
+- tencentcloudmarket.com 
+- qq.com 
+- qlogo.cn 
+- qpic.cn  
+- weixin.qq.com  
+- wx.qq.com 
+- weixin.com  
+- weixinbridge.com  
+- wechat.com 
+- servicewechat.com  
+- weiyun.com  
+- gtimg.cn  
+- idqqimg.com  
+- cdn-go.cn  
+- smtcdns.com  
+- smtcdns.net 
+- url.cn  
+
+
+# > Bytedance
+# refer: https://www.volcengine.com/docs/6758/179060
+- amemv.com  
+- bdxiguaimg.com  
+- bdxiguastatic.com  
+- byted-static.com  
+- bytedance.com  
+- bytedns.net  
+- bytednsdoc.com  
+- bytegoofy.com  
+- byteimg.com  
+- bytescm.com  
+- bytetos.com  
+- bytexservice.com 
+- douyin.com  
+- douyinpic.com 
+- douyinstatic.com  
+- douyinvod.com  
+- feelgood.cn 
+- feiliao.com  
+- gifshow.com 
+- huoshan.com 
+- huoshanzhibo.com  
+- ibytedapm.com 
+- iesdouyin.com  
+- ixigua.com  
+- kspkg.com  
+- pstatp.com 
+- snssdk.com  
+- toutiao.com  
+- toutiao13.com  
+- toutiaocloud.cn  
+- toutiaocloud.com 
+- toutiaopage.com  
+- wukong.com  
+- zijieapi.com  
+- zijieimg.com  
+- zjbyte.com  
+- zjcdn.com 
+
+# > BiliBili
+- upos-sz-mirrorali.bilivideo.com  
+- upos-sz-mirrorbos.bilivideo.com 
+- upos-sz-mirrorcos.bilivideo.com  
+- upos-sz-upcdntx.bilivideo.com  
+
+# > 🇨🇳 CHN
+# CNNIC SDNS
+-  gov.cn
+-  政务
+
+
 - vivo.com
 - vivo.com.cn
 - coloros.com
