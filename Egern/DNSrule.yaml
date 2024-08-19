@@ -42,6 +42,7 @@ domain_suffix_set:
 - hotspot.cslwifi.com 
 # > Apple
 - apple.com 
+- icloud-content.com
 - icloud.com
 # > 阿里巴巴
 # refer: https://www.alidns.com
