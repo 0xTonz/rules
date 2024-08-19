@@ -25,6 +25,8 @@ HOST,steamcommunity-a.akamaihd.net,China
 HOST,weixin.com,China
 HOST,www.libvideo.com,China
 HOST,www.yxssp.com,China
+HOST-SUFFIX,duolingo.cn,China
+HOST-SUFFIX,duolingo.com,China
 HOST-SUFFIX,00cdn.com,China
 HOST-SUFFIX,0123456789.com,China
 HOST-SUFFIX,0379home.com,China
