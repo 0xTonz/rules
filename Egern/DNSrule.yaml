@@ -38,10 +38,9 @@ domain_suffix_set:
 - peiluyou.com  
 - _hotspot_.m2m 
 - hotspot.cslwifi.com 
-
+# > Apple
 - apple.com 
 - icloud.com
-
 # > 阿里巴巴
 # refer: https://www.alidns.com
 - alibaba.cn 
@@ -58,9 +57,7 @@ domain_suffix_set:
 - alibabausercontent.com
 - mmstat.com
 - tb.cn
-
 # > 阿里云
-# refer: https://www.alidns.com
 - aliyun.com
 - aliyuncdn.com
 - aliyuncs.com 
@@ -68,9 +65,7 @@ domain_suffix_set:
 - aliyundun.com 
 - aliyundunwaf.com 
 - aliyun-inc.com 
- 
 # > 蚂蚁集团
-# refer: https://www.alidns.com
 - antgroup.com 
 - antfin.com  
 - antfinancial.com  
@@ -81,7 +76,6 @@ domain_suffix_set:
 - alipaylog.com  
 - alipayobjects.com  
 - alipay-eco.com 
- 
 # > 腾讯
 # refer: https://www.dnspod.cn/products/publicdns
 - tencent.com 
@@ -115,8 +109,6 @@ domain_suffix_set:
 - smtcdns.com  
 - smtcdns.net 
 - url.cn  
-
-
 # > Bytedance
 # refer: https://www.volcengine.com/docs/6758/179060
 - amemv.com  
@@ -156,19 +148,16 @@ domain_suffix_set:
 - zijieimg.com  
 - zjbyte.com  
 - zjcdn.com 
-
 # > BiliBili
 - upos-sz-mirrorali.bilivideo.com  
 - upos-sz-mirrorbos.bilivideo.com 
 - upos-sz-mirrorcos.bilivideo.com  
 - upos-sz-upcdntx.bilivideo.com  
-
 # > 🇨🇳 CHN
 # CNNIC SDNS
 -  gov.cn
 -  政务
-
-
+# > ---------------
 - vivo.com
 - vivo.com.cn
 - coloros.com
@@ -319,7 +308,6 @@ domain_suffix_set:
 - laiqukankan.com
 - zhuanzfx.com
 - 321fenx.com
-- laiqukankan.com
 - youdao.com
 - sina.cn
 - sina.com
@@ -334,7 +322,6 @@ domain_suffix_set:
 - sinaimg.com
 - sinajs.com
 - sinajs.cn
-- sinajs.com
 - t.cn
 - itc.cn
 - sohu-inc.com
@@ -575,7 +562,6 @@ domain_suffix_set:
 - luojilab.com
 - m1905.cn
 - m1905.com
-- maoyan.com
 - maoyun.tv
 - mcdonalds.com.cn
 - mihayo.com
@@ -608,8 +594,6 @@ domain_suffix_set:
 - pingan.com
 - pingwest.com
 - pplive.com
-- pps.tv
-- ppsimg.com
 - qbox.me
 - qcc.com
 - qichacha.com
@@ -680,14 +664,11 @@ domain_suffix_set:
 - uc.cn
 - ucweb.com
 - alibaba.com
-- alicdn.com
 - ialicdn.com
 - myalicdn.com
 - alidns.com
 - aliimg.com
-- aliyun.com
 - aliyuncs.com
-- alikunlun.com
 - alikunlun.net
 - cdngslb.com
 - alipay.com
@@ -695,7 +676,6 @@ domain_suffix_set:
 - alipay.com.cn
 - alipayobjects.com
 - alibaba-inc.com
-- alibabausercontent.com
 - alibabadns.com
 - alicloudccp.com
 - alipan.com
@@ -706,7 +686,6 @@ domain_suffix_set:
 - cainiaoyizhan.com
 - guoguo-app.com
 - etao.com
-- 1688.com
 - 16888.com
 - amap.com
 - gaode.com
@@ -714,10 +693,7 @@ domain_suffix_set:
 - dingtalk.com
 - mxhichina.com
 - soku.com
-- tb.cn
-- taobao.com
 - taobaocdn.com
-- tbcache.com
 - tmall.com
 - tmall.hk
 - xiami.com
@@ -733,7 +709,6 @@ domain_suffix_set:
 - fliggy.com
 - koubei.com
 - mybank.cn
-- mmstat.com
 - uczzd.cn
 - iconfont.cn
 - freshhema.com
@@ -745,7 +720,6 @@ domain_suffix_set:
 - npmmirror.com
 - alios.cn
 - wandoujia.com
-- aliapp.org
 - tanx.com
 - hellobike.com
 - hichina.com
@@ -876,8 +850,6 @@ domain_suffix_set:
 - hao123.com
 - baidu.cn
 - baidu.com
-- iqiyi.com
-- iqiyipic.com
 - baidubce.com
 - bcelive.com
 - baiducontent.com
