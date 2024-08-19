@@ -2,6 +2,9 @@ no_resolve: true
 domain_set:
 - token-api.metaswap.codefi.network
 domain_suffix_set:
+- mokexapp.net
+- forter.com
+- saasexch.io
 - cnouyi.pizza
 - aex.com
 - aicoin.com
