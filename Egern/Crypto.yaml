@@ -2,6 +2,18 @@ no_resolve: true
 domain_set:
 - token-api.metaswap.codefi.network
 domain_suffix_set:
+- appsflayer.com
+- binance.cloud
+- binance.com
+- binance.me
+- binancecnt.com
+- binancefuture.com
+- bnappzh.co
+- bnbstatic.com
+- bnbzh.ac
+- bntrace.com
+- saasexch.cc
+- saasexch.com
 - mokexapp.net
 - forter.com
 - saasexch.io
@@ -11,10 +23,7 @@ domain_suffix_set:
 - aimoon.com
 - bibox.com
 - binance.cc
-- binance.cloud
-- binance.com
 - binance.im
-- binance.me
 - binance.us
 - bitcointalk.org
 - bitfinex.com
@@ -22,10 +31,7 @@ domain_suffix_set:
 - bitmex.com
 - bitstamp.net
 - bittrex.com
-- bnappzh.co
 - bnappzh.com
-- bnbstatic.com
-- bntrace.com
 - bybit.com
 - coinbase.com
 - coincheck.com
