@@ -2,6 +2,9 @@ no_resolve: true
 domain_set:
 - token-api.metaswap.codefi.network
 domain_suffix_set:
+- googleapis.com
+- facebook.com
+- cloudfront.net
 - appsflayer.com
 - binance.cloud
 - binance.com
