@@ -8,62 +8,94 @@
 [General]
 # ---(DNS 服务器)---
 # > 通过代理请求使用本地DNS映射结果
-use-local-host-item-for-proxy = true
+# > use-local-host-item-for-proxy = true
 
 # > 加密DNS服务器
 # 使加密DNS请求通过代理策略执行
-encrypted-dns-follow-outbound-mode = false
+# > encrypted-dns-follow-outbound-mode = false
 
 [Host]
-# --- CUSTOM HOSTS ---
-# > 阿里巴巴
-# refer: https://www.alidns.com
-*.alibaba.cn = server:223.5.5.5 // 阿里巴巴
-*.alibaba.com.cn = server:223.5.5.5 // 阿里巴巴
-*.china.alibaba.com = server:223.5.5.5 // Alibaba 中国
-*.1688.com = server:223.5.5.5 // 1688
-*.taobao.com = server:223.5.5.5 // 淘宝
-*.tbcache.com = server:223.5.5.5 // 淘宝 缓存
-*.tmall.com = server:223.5.5.5 // 天猫
-*.alicdn.com = server:223.5.5.5 // 阿里 CDN
-*.alikunlun.com = server:223.5.5.5 // 阿里昆仑
-*.aliapp.com = server:223.5.5.5 // 云引擎应用平台
-*.aliapp.org = server:223.5.5.5 // 上云平台
-*.alibabausercontent.com = server:223.5.5.5 // 阿里用户上传资料
-*.mmstat.com = server:223.5.5.5 // mmstat 数据统计 广告追踪
-tb.cn = server:223.5.5.5 // 淘宝短网址
 
-# --- CUSTOM HOSTS ---
+# > Router Admin Panel
+*.id.ui.direct = server:syslib // Ubiquiti Unifi Network App
+# unifi.ui.com = server:syslib // Ubiquiti Unifi Portal
+unifi.local = server:syslib // Ubiquiti Unifi OS
+# network.unifi.ui.com = server:syslib // Ubiquiti Unifi Controller
+amplifi.lan = server:syslib // Ubiquiti Amplifi Router
+router.synology.com = server:syslib // Synology Router
+sila.razer.com = server:syslib // Razer Sila Router
+router.asus.com = server:syslib // Asus Router
+routerlogin.net = server:syslib // Netgear Router
+orbilogin.com = server:syslib // Netgear Obri Router
+www.LinksysSmartWiFi.com = server:syslib // Linksys Router
+LinksysSmartWiFi.com = server:syslib // Linksys Router
+myrouter.local = server:syslib // Linksys Router
+instant.arubanetworks.com = server:syslib // Aurba Router
+setmeup.arubanetworks.com = server:syslib // Aurba Router
+www.miwifi.com = server:syslib // 小米 Mi WiFi Router
+miwifi.com = server:syslib // 小米 Mi WiFi Router
+mediarouter.home = server:syslib // 华为 Huawei Router
+tplogin.cn = server:syslib // TP-Link Router
+tplinklogin.net = server:syslib // TP-Link Router
+tplinkwifi.net = server:syslib // TP-Link Router
+melogin.cn = server:syslib // 水星 MERCURY Router
+falogin.cn = server:syslib // 迅捷 FAST Router
+tendawifi.com = server:syslib // 腾达 Tenda Router
+leike.cc = server:syslib // 磊科 Netcore Router
+zte.home = server:syslib // 中兴 ZTE Router
+p.to = server:syslib // 斐讯 PHICOMM Router
+phicomm.me = server:syslib // 斐讯 PHICOMM Router
+hiwifi.com = server:syslib // 极路由 HiWiFi Router
+peiluyou.com = server:syslib // 迅雷路由
+_hotspot_.m2m = server:syslib // M2M routers at MiFi Hotspot
+hotspot.cslwifi.com = server:syslib // csl Wi-Fi
+
 # > Apple
 # refer: https://support.apple.com/zh-cn/HT210060
 networking.apple = server:syslib // Apple
-*.apple.com = server:syslib // Apple.com
+# *.apple.com = server:syslib // Apple.com
 *.icloud.com = server:syslib // iCloud.com
+
+# > 阿里巴巴
+# refer: https://www.alidns.com
+*.alibaba.cn = server:syslib // 阿里巴巴
+*.alibaba.com.cn = server:syslib // 阿里巴巴
+*.china.alibaba.com = server:syslib // Alibaba 中国
+*.1688.com = server:syslib // 1688
+*.taobao.com = server:syslib // 淘宝
+*.tbcache.com = server:syslib // 淘宝 缓存
+*.tmall.com = server:syslib // 天猫
+*.alicdn.com = server:syslib // 阿里 CDN
+*.alikunlun.com = server:syslib // 阿里昆仑
+*.aliapp.com = server:syslib // 云引擎应用平台
+*.aliapp.org = server:syslib // 上云平台
+*.alibabausercontent.com = server:syslib // 阿里用户上传资料
+*.mmstat.com = server:syslib // mmstat 数据统计 广告追踪
+tb.cn = server:syslib // 淘宝短网址
 
 # > 阿里云
 # refer: https://www.alidns.com
-*.aliyun.* = server:223.5.5.5 // 阿里云
-*.aliyuncdn.* = server:223.5.5.5 // 阿里云 CDN
-*.aliyuncs.com = server:223.5.5.5 // 阿里云 API 服务
-*.aliyunddos????.com = server:223.5.5.5 // 阿里云 DDoS防护
-*.aliyundrive.com = server:223.5.5.5 // 阿里云盘
-*.aliyundun.com = server:223.5.5.5 // 阿里云盾
-*.aliyundunwaf.com = server:223.5.5.5 // 阿里云盾 Web 应用防火墙
-*.aliyun-inc.com = server:223.5.5.5 // 阿里云 内部
-
+*.aliyun.* = server:syslib // 阿里云
+*.aliyuncdn.* = server:syslib // 阿里云 CDN
+*.aliyuncs.com = server:syslib // 阿里云 API 服务
+*.aliyunddos????.com = server:syslib // 阿里云 DDoS防护
+*.aliyundrive.com = server:syslib // 阿里云盘
+*.aliyundun.com = server:syslib // 阿里云盾
+*.aliyundunwaf.com = server:syslib // 阿里云盾 Web 应用防火墙
+*.aliyun-inc.com = server:syslib // 阿里云 内部
 
 # > 蚂蚁集团
 # refer: https://www.alidns.com
-*.antgroup.com = server:223.5.5.5 // 蚂蚁集团
-*.antfin.com = server:223.5.5.5 // 蚂蚁金服
-*.antfinancial.com = server:223.5.5.5 // 蚂蚁金服
-*.alipay.com = server:223.5.5.5 // 支付宝
-*.alipay.com.cn = server:223.5.5.5 // 支付宝
-*.alipaydns.com = server:223.5.5.5 // 支付宝 HTTP DNS
-*.alipayeshop.com = server:223.5.5.5 // 支付宝 商家资源
-*.alipaylog.com = server:223.5.5.5 // 支付宝 Mdap
-*.alipayobjects.com = server:223.5.5.5 // 支付宝 静态资源
-*.alipay-eco.com = server:223.5.5.5 // 支付宝 开放技术生态体系
+*.antgroup.com = server:syslib // 蚂蚁集团
+*.antfin.com = server:syslib // 蚂蚁金服
+*.antfinancial.com = server:syslib // 蚂蚁金服
+*.alipay.com = server:syslib // 支付宝
+*.alipay.com.cn = server:syslib // 支付宝
+*.alipaydns.com = server:syslib // 支付宝 HTTP DNS
+*.alipayeshop.com = server:syslib // 支付宝 商家资源
+*.alipaylog.com = server:syslib // 支付宝 Mdap
+*.alipayobjects.com = server:syslib // 支付宝 静态资源
+*.alipay-eco.com = server:syslib // 支付宝 开放技术生态体系
 
 # > 腾讯
 # refer: https://www.dnspod.cn/products/publicdns
@@ -101,42 +133,57 @@ url.cn = server:syslib // 腾讯短网址
 
 # > Bytedance
 # refer: https://www.volcengine.com/docs/6758/179060
-*.amemv.com = server:180.184.1.1 // 艾特迷
-*.bdxiguaimg.com = server:180.184.1.1 // 西瓜 图片服务
-*.bdxiguastatic.com = server:180.184.1.1 // 西瓜 静态资源
-*.byted-static.com = server:180.184.1.1 // 字节跳动 UNPKG
-*.bytedance.* = server:180.184.1.1 // 字节跳动
-*.bytedns.net = server:180.184.1.1 // 字节跳动 DNS
-*.bytednsdoc.com = server:180.184.1.1 // 字节跳动 CDN 文件存储
-*.bytegoofy.com = server:180.184.1.1 // 字节跳动 Goofy
-*.byteimg.com = server:180.184.1.1 // 字节跳动 图片服务
-*.bytescm.com = server:180.184.1.1 // 字节跳动 SCM
-*.bytetos.com = server:180.184.1.1 // 字节跳动 TOS
-*.bytexservice.com = server:180.184.1.1 // 飞书企业服务平台
-*.douyin.com = server:180.184.1.1 // 抖音
-*.douyinpic.com = server:180.184.1.1 // 抖音 静态资源
-*.douyinstatic.com = server:180.184.1.1 // 抖音 静态资源
-*.douyinvod.com = server:180.184.1.1 // 抖音 静态资源
-*.feelgood.cn = server:180.184.1.1 // FeelGood平台
-*.feiliao.com = server:180.184.1.1 // 飞聊官网
-*.gifshow.com = server:180.184.1.1 // 快手
-*.huoshan.com = server:180.184.1.1 // 火山网
-*.huoshanzhibo.com = server:180.184.1.1 // 火山直播
-*.ibytedapm.com = server:180.184.1.1 // 抖音 dapm
-*.iesdouyin.com = server:180.184.1.1 // 抖音 CDN
-*.ixigua.com = server:180.184.1.1 // 西瓜视频
-*.kspkg.com = server:180.184.1.1 // 快手
-*.pstatp.com = server:180.184.1.1 // 抖音 静态资源
-*.snssdk.com = server:180.184.1.1 // 今日头条
-*.toutiao.com = server:180.184.1.1 // 今日头条
-*.toutiao13.com = server:180.184.1.1 // 今日头条
-*.toutiao???.??? = server:180.184.1.1 // 今日头条 静态资源
-*.toutiaocloud.cn = server:180.184.1.1 // 头条云
-*.toutiaocloud.com = server:180.184.1.1 // 头条云
-*.toutiaopage.com = server:180.184.1.1 // 今日头条 建站
-*.wukong.com = server:180.184.1.1 // 悟空
-*.zijieapi.com = server:180.184.1.1 // 字节跳动 API
-*.zijieimg.com = server:180.184.1.1 // 字节跳动 图片服务
-*.zjbyte.com = server:180.184.1.1 // 今日头条 网页版
-*.zjcdn.com = server:180.184.1.1 // 字节跳动 CDN
+*.amemv.com = server:syslib // 艾特迷
+*.bdxiguaimg.com = server:syslib // 西瓜 图片服务
+*.bdxiguastatic.com = server:syslib // 西瓜 静态资源
+*.byted-static.com = server:syslib // 字节跳动 UNPKG
+*.bytedance.* = server:syslib // 字节跳动
+*.bytedns.net = server:syslib // 字节跳动 DNS
+*.bytednsdoc.com = server:syslib // 字节跳动 CDN 文件存储
+*.bytegoofy.com = server:syslib // 字节跳动 Goofy
+*.byteimg.com = server:syslib // 字节跳动 图片服务
+*.bytescm.com = server:syslib // 字节跳动 SCM
+*.bytetos.com = server:syslib // 字节跳动 TOS
+*.bytexservice.com = server:syslib // 飞书企业服务平台
+*.douyin.com = server:syslib // 抖音
+*.douyinpic.com = server:syslib // 抖音 静态资源
+*.douyinstatic.com = server:syslib // 抖音 静态资源
+*.douyinvod.com = server:syslib // 抖音 静态资源
+*.feelgood.cn = server:syslib // FeelGood平台
+*.feiliao.com = server:syslib // 飞聊官网
+*.gifshow.com = server:syslib // 快手
+*.huoshan.com = server:syslib // 火山网
+*.huoshanzhibo.com = server:syslib // 火山直播
+*.ibytedapm.com = server:syslib // 抖音 dapm
+*.iesdouyin.com = server:syslib // 抖音 CDN
+*.ixigua.com = server:syslib // 西瓜视频
+*.kspkg.com = server:syslib // 快手
+*.pstatp.com = server:syslib // 抖音 静态资源
+*.snssdk.com = server:syslib // 今日头条
+*.toutiao.com = server:syslib // 今日头条
+*.toutiao13.com = server:syslib // 今日头条
+*.toutiao???.??? = server:syslib // 今日头条 静态资源
+*.toutiaocloud.cn = server:syslib // 头条云
+*.toutiaocloud.com = server:syslib // 头条云
+*.toutiaopage.com = server:syslib // 今日头条 建站
+*.wukong.com = server:syslib // 悟空
+*.zijieapi.com = server:syslib // 字节跳动 API
+*.zijieimg.com = server:syslib // 字节跳动 图片服务
+*.zjbyte.com = server:syslib // 今日头条 网页版
+*.zjcdn.com = server:syslib // 字节跳动 CDN
 
+# > BiliBili
+upos-sz-mirrorali.bilivideo.com = server:syslib // BiliBili upos视频服务器（阿里云）
+upos-sz-mirrorali?.bilivideo.com = server:syslib // BiliBili upos视频服务器（阿里云）
+upos-sz-mirrorali??.bilivideo.com = server:syslib // BiliBili upos视频服务器（阿里云）
+upos-sz-mirrorbos.bilivideo.com = server:syslib // BiliBili upos视频服务器（百度云）
+upos-sz-mirrorcos.bilivideo.com = server:syslib // BiliBili upos视频服务器（腾讯云）
+upos-sz-mirrorcos?.bilivideo.com = server:syslib // BiliBili upos视频服务器（腾讯云）
+upos-sz-mirrorcos??.bilivideo.com = server:syslib // BiliBili upos视频服务器（腾讯云）
+upos-sz-upcdnbd??.bilivideo.com = server:180.76.76.76 // BiliBili upos视频服务器（百度云）
+upos-sz-upcdntx.bilivideo.com = server:syslib // BiliBili upos视频服务器（腾讯云）
+
+# > 🇨🇳 CHN
+# CNNIC SDNS
+# *.gov.cn = server:syslib // 中国政府网
+# *.政务 = server:syslib // 中国政府网
