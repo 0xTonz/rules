@@ -36,6 +36,7 @@ www.yxssp.com = server:syslib
 # --- ADD ---
 *.apple.com = server:syslib
 *.icloud.com = server:syslib
+*.duolingo.com = server:syslib
 # --- ADD ---
 *.00cdn.com = server:syslib
 *.0123456789.com = server:syslib
