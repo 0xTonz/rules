@@ -6,10 +6,6 @@
 # DOMAIN-KEYWORD: 4
 # DOMAIN-SUFFIX: 195
 # TOTAL: 200
-DOMAIN-SUFFIX,forter.com
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,appsflayer.com
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binance.com
@@ -22,6 +18,10 @@ DOMAIN-SUFFIX,bnbzh.ac
 DOMAIN-SUFFIX,bntrace.com
 DOMAIN-SUFFIX,saasexch.cc
 DOMAIN-SUFFIX,saasexch.com
+DOMAIN-SUFFIX,forter.com
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,oklink.com
+DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,byabcde.com
 DOMAIN-SUFFIX,bybdc6.com
 DOMAIN-SUFFIX,bybit.biz
