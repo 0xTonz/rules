@@ -6,6 +6,21 @@
 # DOMAIN-KEYWORD: 4
 # DOMAIN-SUFFIX: 195
 # TOTAL: 200
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,oklink.com
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,appsflayer.com
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binancecnt.com
+DOMAIN-SUFFIX,binancefuture.com
+DOMAIN-SUFFIX,bnappzh.co
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bnbzh.ac
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,saasexch.cc
+DOMAIN-SUFFIX,saasexch.com
 DOMAIN-SUFFIX,byabcde.com
 DOMAIN-SUFFIX,bybdc6.com
 DOMAIN-SUFFIX,bybit.biz
@@ -55,11 +70,8 @@ DOMAIN-SUFFIX,block.one
 DOMAIN-SUFFIX,blockchain.com
 DOMAIN-SUFFIX,blockchair.com
 DOMAIN-SUFFIX,bloks.io
-DOMAIN-SUFFIX,bnappzh.co
 DOMAIN-SUFFIX,bnappzh.com
 DOMAIN-SUFFIX,bnappzh.mobi
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bntrace.com
 DOMAIN-SUFFIX,boba.network
 DOMAIN-SUFFIX,bsc.getblock.io
 DOMAIN-SUFFIX,bscscan.com
@@ -170,8 +182,6 @@ DOMAIN-SUFFIX,nftgo.io
 DOMAIN-SUFFIX,nftscan.com
 DOMAIN-SUFFIX,nonfungible.com
 DOMAIN-SUFFIX,nyctale.io
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,oklink.com
 DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,optimism.io
 DOMAIN-SUFFIX,pancakeswap.com
@@ -214,13 +224,9 @@ DOMAIN-SUFFIX,zb.live
 DOMAIN-SUFFIX,zkscan.io
 DOMAIN-SUFFIX,zksync.io
 DOMAIN-SUFFIX,binance.cc
-DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.im
-DOMAIN-SUFFIX,binance.me
 DOMAIN-SUFFIX,binance.us
 DOMAIN-SUFFIX,huobi.com
-DOMAIN-SUFFIX,okx.com
 DOMAIN-KEYWORD,binance
 DOMAIN-KEYWORD,huobi
 DOMAIN-KEYWORD,metamask
