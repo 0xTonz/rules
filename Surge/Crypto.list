@@ -6,6 +6,12 @@
 # DOMAIN-KEYWORD: 4
 # DOMAIN-SUFFIX: 195
 # TOTAL: 200
+DOMAIN-SUFFIX,mokexapp.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,commmonservice.io
+DOMAIN-SUFFIX,sentry.io
+
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,oklink.com
 DOMAIN-SUFFIX,okx.com
