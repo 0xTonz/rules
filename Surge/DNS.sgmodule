@@ -33,6 +33,10 @@ steamcommunity-a.akamaihd.net = server:syslib
 weixin.com = server:syslib
 www.libvideo.com = server:syslib
 www.yxssp.com = server:syslib
+# --- ADD ---
+*.apple.com = server:syslib
+*.icloud.com = server:syslib
+# --- ADD ---
 *.00cdn.com = server:syslib
 *.0123456789.com = server:syslib
 *.0379home.com = server:syslib
