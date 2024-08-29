@@ -13,6 +13,7 @@ domain_set:
 - miwifi.com
 - www.miwifi.com
 domain_suffix_set:
+- ifconfig.me
 - lan
 - localdomain
 - example
