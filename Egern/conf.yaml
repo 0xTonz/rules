@@ -1,0 +1,115 @@
+# 配置名称: Egern 配置
+# 配置作者: Kirio
+# 更新时间: 24-08-23 00:00
+
+# [端口设置]
+http_port: 8200      # HTTP  代理端口
+socks_port: 8300     # SOCKS 代理端口
+
+# [全局配置]
+ipv6: false          # 启用IPv6
+compat_route: false  # 兼容模式
+hide_vpn_icon: false # 图标隐藏
+
+# [延迟测试]
+direct_latency_test_url: http://taobao.com/
+proxy_latency_test_url: http://www.apple.com/library/test/success.html
+
+# [外部连接]
+allow_external_connections: false
+
+# [TUN模式]
+vif_only: true
+
+# [GEO设置]
+geoip_db_url: https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
+asn_db_url:https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
+
+# [DNS设置]
+dns:
+  bootstrap:
+    - 233.5.5.5
+    - 119.29.29.29
+  upstreams:
+    SecureDNS:
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+  forward:
+    - proxy_rule_set:
+      match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/cncidr.yaml
+      value: system
+    - proxy_rule_set:
+      match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/direct.yaml
+      value: system
+    - wildcard:
+        match: '*'
+        value: SecureDNS
+  public_ip_lookup_url: https://ifconfig.me/ip
+
+# [策略组]
+policy_groups:
+- auto_test:
+    name: 𝙎𝙥𝙚𝙚𝙙
+    policies:
+    - 𝙁𝙡𝙤𝙬𝙚𝙧
+    flatten: true
+    filter: 新加坡
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want_1.png
+    hidden: false
+- external:
+    name: 𝙁𝙡𝙤𝙬𝙚𝙧
+    type: select
+    urls:
+    - 订阅链接 # 🧸
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Flower.png
+
+
+# [分流规则]
+rules:
+- rule_set:
+    match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/direct.yaml
+    policy: DIRECT
+    
+- rule_set:
+    match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/cncidr.yaml
+    policy: DIRECT
+    
+- rule_set:
+    match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/telegram.yaml
+    policy: 𝙎𝙥𝙚𝙚𝙙
+    
+- rule_set:
+    match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/ChinaASN.yaml
+    policy: DIRECT
+    
+- rule_set:
+    match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/lan.yaml
+    policy: DIRECT
+    
+- geoip:
+    match: CN
+    policy: DIRECT
+    
+- default:
+    policy: 𝙎𝙥𝙚𝙚𝙙
+
+
+# [MITM]
+mitm:
+  enabled: true
+
+# [模块]
+  - name: BoxJs
+    url: https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
+    update_interval: 86400
+    enabled: true
+    
+  - name: ScriptHub
+    url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule
+    update_interval: 86400
+    enabled: true
+    
+  - name: Sub-Store
+    url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Surge.sgmodule
+    update_interval: 86400 
+    enabled: true
