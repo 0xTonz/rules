@@ -55,7 +55,7 @@ policy_groups:
     flatten: true
     filter: 新加坡
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Want_Want_1.png
-    hidden: false
+    hidden: true
 - external:
     name: 𝙁𝙡𝙤𝙬𝙚𝙧
     type: select
