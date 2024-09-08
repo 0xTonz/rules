@@ -66,6 +66,7 @@ policy_groups:
 
 # [分流规则]
 rules:
+
 - rule_set:
     match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/direct.yaml
     policy: DIRECT
