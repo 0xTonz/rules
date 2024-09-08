@@ -102,16 +102,16 @@ mitm:
 # [模块]
 modules:
 - name: BoxJs
-    url: https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
-    update_interval: 86400
-    enabled: true
-    
+  url: https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.sgmodule
+  update_interval: 86400
+  enabled: true
+  
 - name: ScriptHub
-    url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule
-    update_interval: 86400
-    enabled: true
-    
+  url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule
+  update_interval: 86400
+  enabled: true
+  
 - name: Sub-Store
-    url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Surge.sgmodule
-    update_interval: 86400 
-    enabled: true
+  url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Surge.sgmodule
+  update_interval: 86400
+  enabled: true
