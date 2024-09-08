@@ -23,7 +23,7 @@ vif_only: true
 
 # [GEO设置]
 geoip_db_url: https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
-asn_db_url:https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
+asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
 
 # [DNS设置]
 dns:
