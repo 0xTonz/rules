@@ -21,6 +21,23 @@ allow_external_connections: false
 # [TUN模式]
 vif_only: true
 
+# [跳过TUN代理]
+bypass_tunnel_prox:
+- 10.0.0.0/8
+- 100.64.0.0/10
+- 127.0.0.0/8
+- 169.254.0.0/16
+- 172.16.0.0/12
+- 192.0.0.0/24
+- 192.0.2.0/24
+- 192.88.99.0/24
+- 192.168.0.0/16
+- 198.18.0.0/15
+- 198.51.100.0/24
+- 203.0.113.0/24,
+- 224.0.0.0/4,
+- 255.255.255.255/32
+
 # [GEO设置]
 geoip_db_url: https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
 asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
