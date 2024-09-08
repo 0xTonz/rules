@@ -36,11 +36,11 @@ dns:
       - https://dns.alidns.com/dns-query
   forward:
     - proxy_rule_set:
-      match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/cncidr.yaml
-      value: system
+        match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/cncidr.yaml
+        value: system
     - proxy_rule_set:
-      match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/direct.yaml
-      value: system
+        match: https://raw.githubusercontent.com/0xTons/rules/master/Egern/direct.yaml
+        value: system
     - wildcard:
         match: '*'
         value: SecureDNS
