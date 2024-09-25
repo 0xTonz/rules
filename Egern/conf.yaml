@@ -65,8 +65,8 @@ dns:
 
 # [策略组]
 policy_groups:
-- auto_test:
-    name: 𝙎𝙥𝙚𝙚𝙙
+- load_balance:
+    name: 𝙁𝙞𝙣𝙖𝙡
     policies:
     - 𝙁𝙡𝙤𝙬𝙚𝙧
     flatten: true
@@ -112,7 +112,7 @@ rules:
     policy: DIRECT
     
 - default:
-    policy: 𝙎𝙥𝙚𝙚𝙙
+    policy: 𝙁𝙞𝙣𝙖𝙡
 
 
 # [MITM]
