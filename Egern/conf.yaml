@@ -39,7 +39,7 @@ bypass_tunnel_proxy:
 - 255.255.255.255/32
 
 # [GEO设置]
-geoip_db_url: https://github.com/Masaiki/GeoIP2-CN/raw/release/Country.mmdb
+geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
 asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
 
 # [DNS设置]
