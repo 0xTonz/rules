@@ -1,7 +1,9 @@
 #!name=proxy_list
 #!homepage=https://github.com/GMOogway/shadowrocket-rules
 #!desc=Rules:31675 Created:03-25 06:39 Publisher:GMOogway
-[Rule]
+
+
+
 DOMAIN-SUFFIX,redditinc.com
 DOMAIN-SUFFIX,zsh.org
 DOMAIN-SUFFIX,cloudflarepreview.com
