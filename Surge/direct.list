@@ -1,7 +1,7 @@
 #!name=direct_list
 #!homepage=https://github.com/GMOogway/shadowrocket-rules
 #!desc=Rules:99534 Created:03-25 06:39 Publisher:GMOogway
-[Rule]
+
 DOMAIN-SUFFIX,alictf.com
 DOMAIN-SUFFIX,chinainsbrokers.com
 DOMAIN-SUFFIX,huinongtx.com
