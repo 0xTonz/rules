@@ -1,7 +1,9 @@
 #!name=reject_list
 #!homepage=https://github.com/GMOogway/shadowrocket-rules
 #!desc=Rules:114428 Created:03-25 06:39 Publisher:GMOogway
-[Rule]
+
+
+
 DOMAIN-SUFFIX,oms.avast.com
 DOMAIN-SUFFIX,canopylabs.com
 DOMAIN-SUFFIX,track.marketing.mba
