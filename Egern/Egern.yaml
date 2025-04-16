@@ -1,0 +1,819 @@
+ipv6: false
+http_port: 3080
+socks_port: 3090
+allow_external_connections: true
+vif_only: false
+hide_vpn_icon: false
+hijack_dns:
+- '*'
+geoip_db_url: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb
+asn_db_url: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
+proxy_latency_test_url: https://www.apple.com/library/test/success.html
+direct_latency_test_url: https://wifi.vivo.com.cn/generate_204
+compat_route: true
+include_all_networks: false
+include_apns: false
+include_cellular_services: false
+include_local_networks: false
+dns:
+  bootstrap:
+  - 233.5.5.5
+  - 223.6.6.6
+  upstreams:
+    Domestic-Encrypted-DNS:
+    - https://dns.alidns.com/dns-query
+    - quic://dns.alidns.com
+    - https://doh.pub/dns-query
+    Foreign-Encrypted-DNS:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+  forward:
+  - wildcard:
+      match: '*'
+      value: Domestic-Encrypted-DNS
+  hosts:
+    ip6-localhost: ::1
+    ip6-loopback: ::1
+    ip6-localnet: fe00::0
+    ip6-mcastprefix: ff00::0
+    ip6-allnodes: ff02::1
+    ip6-allrouters: ff02::2
+    ip6-allhosts: ff02::3
+    dns.google: 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
+    dns64.dns.google: 2001:4860:4860::6464, 2001:4860:4860::64
+    cloudflare-dns.com: 104.16.249.249, 104.16.248.249, 2606:4700::6810:f8f9, 2606:4700::6810:f9f9
+    1dot1dot1dot1.cloudflare-dns.com: 1.1.1.1, 1.0.0.1, 2606:4700:4700::1001, 2606:4700:4700::1111
+    one.one.one.one: 1.1.1.1, 1.0.0.1, 2606:4700:4700::1001, 2606:4700:4700::1111
+    dns.alidns.com: 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1
+    doh.pub: 1.12.12.12, 120.53.53.53
+    dot.pub: 1.12.12.12, 120.53.53.53
+    doh.360.cn: 23.6.48.18, 112.65.69.15
+    dot.360.cn: 101.198.198.198, 101.198.199.200, 101.198.192.33, 112.65.69.15
+    dns.twnic.tw: 101.101.101.101, 2001:de4::101, 2001:de4::102
+    ordns.he.net: 74.82.42.42, 2001:470:20::2
+    talk.google.com: 108.177.125.188
+    mtalk.google.com: 108.177.125.188, 2404:6800:4008:c07::bc, 142.250.31.188
+    alt1-mtalk.google.com: 3.3.3.3, 2607:f8b0:4023:c0b::bc, 64.233.171.188
+    alt2-mtalk.google.com: 3.3.3.3, 142.250.115.188
+    alt3-mtalk.google.com: 74.125.200.188, 173.194.77.188
+    alt4-mtalk.google.com: 74.125.200.188, 173.194.219.188
+    alt5-mtalk.google.com: 3.3.3.3, 2607:f8b0:4023:1::bc, 142.250.112.188
+    alt6-mtalk.google.com: 3.3.3.3, 172.217.197.188
+    alt7-mtalk.google.com: 74.125.200.188, 2607:f8b0:4002:c03::bc, 108.177.12.188
+    alt8-mtalk.google.com: 3.3.3.3
+    blog.google: server:119.29.29.29
+    googletraveladservices.com: server:119.29.29.29
+    dl.google.com: server:119.29.29.29
+    dl.l.google.com: server:119.29.29.29
+    clientservices.googleapis.com: server:119.29.29.29
+    update.googleapis.com: server:119.29.29.29
+    translate.googleapis.com: server:119.29.29.29
+    fonts.googleapis.com: server:119.29.29.29
+    fonts.gstatic.com: server:119.29.29.29
+  public_ip_lookup_url: https://ifconfig.me/ip
+proxies:
+- http:
+    name: 广州联通
+    server: 163.177.17.6
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+- http:
+    name: 广州联通x
+    server: 163.177.17.189
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+- http:
+    name: 广州电信
+    server: 14.215.182.75
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive'
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+- http:
+    name: 广州移动
+    server: 183.240.98.84
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive'
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+- http:
+    name: 南京联通
+    server: 153.3.237.117
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+- http:
+    name: 南京电信
+    server: 180.101.50.249
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+- http:
+    name: 南京电信x
+    server: 180.101.50.208
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+- http:
+    name: 南京移动
+    server: 36.155.169.188
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+- http:
+    name: 动态百度
+    server: cloudnproxy.baidu.com
+    port: 443
+    username: ''
+    password: ''
+    headers:
+      Host: 153.3.236.22:443
+      X-T5-Auth: '683556433'
+      Connection: Keep-Alive'
+      User-Agent: okhttp/3.11.0 Dalvik/2.1.0 (Linux; U; Android 11; Redmi K30 5G Build/RKQ1.200826.002) baiduboxapp/11.0.5.12 (Baidu; P1 11)
+policy_groups:
+- external:
+    name: Linkeless
+    type: select
+    urls:
+    - https://sub.store/download/Linkeless?target=Egern
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Linkeless.png
+- external:
+    name: 守候网络
+    type: select
+    urls:
+    - https://sub.store/download/sntp?target=Egern
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/shouhou(3).png
+- external:
+    name: OuO
+    type: select
+    urls:
+    - https://sub.store/download/OuO?target=Egern
+    filter: ''
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ouo.png
+- fallback:
+    name: 免流
+    policies:
+    - 南京移动
+    - 南京电信
+    - 南京电信x
+    - 南京联通
+    - 广州电信
+    - 广州联通
+    - 广州联通x
+    - 广州移动
+    - 动态百度
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/CN.png
+    hidden: false
+- select:
+    name: 自选
+    policies:
+    - Linkeless
+    - 守候网络
+    - OuO
+    flatten: true
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Filter.png
+- select:
+    name: VPN
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+- select:
+    name: Emby
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    flatten: false
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/emby.png
+- select:
+    name: Spotify
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+- select:
+    name: Tiktok
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/tiktok(1).png
+- select:
+    name: Youtube
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/youtube.png
+- select:
+    name: Instagram
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/instagram(2).png
+- select:
+    name: Facebook
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/facebook.png
+- select:
+    name: Media
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
+- select:
+    name: OpenAi
+    policies:
+    - DIRECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
+- select:
+    name: Telegram
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Telegram_X.png
+- select:
+    name: Cloudflare
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Cloudflare.png
+- select:
+    name: Google
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/google(1).png
+- select:
+    name: Github
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
+- select:
+    name: Microsoft
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Microsoft.png
+- select:
+    name: Apple Update
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Update.png
+- select:
+    name: Apple
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Apple-2.png
+    hidden: false
+- select:
+    name: Global
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/Global.png
+    hidden: false
+- select:
+    name: Bilibili
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/bilibili(1).png
+- select:
+    name: Douyin
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_2.png
+- select:
+    name: Douyu
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/shuangyu.png
+- select:
+    name: Huya
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/hamhub.png
+- select:
+    name: CNMedia
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/DomesticMedia.png
+- select:
+    name: Weibo
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/weibo(1).png
+- select:
+    name: Zhihu
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/zhihu.png
+- select:
+    name: Domestic
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Domestic.png
+- select:
+    name: Match
+    policies:
+    - DIRECT
+    - REJECT
+    - 免流
+    - 香港
+    - 台湾
+    - 狮城
+    - 日本
+    - 韩国
+    - 美国
+    - 其他
+    - 低倍
+    - 高倍
+    icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Final.png
+    hidden: false
+- fallback:
+    name: 香港
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: (香港|HK|🇭🇰)(?!.*(0\.))
+    interval: 1800
+    timeout: 5
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/HK.png
+    hidden: true
+- fallback:
+    name: 台湾
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: (台湾|TW|🇹🇼)(?!.*(0\.))
+    interval: 1800
+    timeout: 5
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/TW.png
+    hidden: true
+- fallback:
+    name: 狮城
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: (新加坡|SG|狮城|🇸🇬)(?!.*(0\.))
+    interval: 1800
+    timeout: 5
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/SG.png
+    hidden: true
+- fallback:
+    name: 日本
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: (日本|JP|🇯🇵)(?!.*(0\.))
+    interval: 1800
+    timeout: 5
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/JP.png
+    hidden: true
+- fallback:
+    name: 韩国
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: (韩国|KR|🇰🇷)(?!.*(0\.))
+    interval: 1800
+    timeout: 5
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/KR.png
+    hidden: true
+- fallback:
+    name: 美国
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: (美国US|🇺🇸)(?!.*(0\.))
+    interval: 1800
+    timeout: 5
+    icon: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Gallery/Color/US.png
+    hidden: true
+- fallback:
+    name: 其他
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: ^(?!.*((?i)🇭🇰|🇨🇳|🇸🇬|🇯🇵|🇰🇷|🇺🇸|香港|台湾|新加坡|狮城|日本|韩国|美国|HK|TW|SG|JP|\bKR\b|US|Hong|Taiwan|Singapore|Japan|Korea|States)).*
+    hidden: true
+- fallback:
+    name: 低倍
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: 0\.\d+
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/liuliang(2).png
+    hidden: true
+- fallback:
+    name: 高倍
+    policies:
+    - Linkeless
+    - 守候网络
+    flatten: true
+    filter: (?!0\.)[1-9]\d*(?:\.\d+)
+    icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/icon/liuliang(3).png
+    hidden: true
+rules:
+- and:
+    match:
+    - dest_port:
+        match: '443'
+    - protocol:
+        match: quic
+    policy: REJECT
+    disabled: false
+- domain_regex:
+    match: hk[a-z]+(\.[a-z]+)*\.(weixin|wechat)(\.qq)?\.com$
+    policy: 香港
+    disabled: false
+- domain_regex:
+    match: sg[a-z]+(\.[a-z]+)*\.(weixin|wechat)(\.qq)?\.com$
+    policy: 狮城
+    disabled: false
+- domain_regex:
+    match: ^(?i).*?(imap|smtp).*?\.(qq\.com|163\.com|foxmail\.com|189\.cn|126\.com|sina\.(?:com\.cn|cn)|aliyun\.com|yeah\.net|139\.com|wo\.cn|21cn\.com)$
+    policy: DIRECT
+    disabled: false
+- domain_suffix:
+    match: metacubex.one
+    policy: Global
+    disabled: false
+- or:
+    match:
+    - domain_keyword:
+        match: gwmapp
+    - domain_keyword:
+        match: gwm-mn
+    - domain_suffix:
+        match: gwm.cn
+    - domain_suffix:
+        match: gwm.com.cn
+    policy: DIRECT
+    disabled: false
+- or:
+    match:
+    - domain:
+        match: emby.cn2gias.uk
+    - domain:
+        match: random.ouonet.org
+    policy: Emby
+    disabled: false
+- or:
+    match:
+    - domain_keyword:
+        match: ouoboom
+    - domain_keyword:
+        match: linkeless
+    - domain_keyword:
+        match: sntp
+    policy: VPN
+    disabled: false
+- rule_set:
+    match: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Surge/Lan/Lan.list
+    policy: DIRECT
+    update_interval: 86400
+    disabled: false
+- default:
+    policy: Match
+url_rewrites:
+- match: (.*google)\\.cn
+  location: $1.com
+  status_code: 307
+mitm:
+  enabled: true
+  ca_p12: egern.p12
+  ca_passphrase: egern
+  hostnames:
+    excludes:
+    - '*.icloud.com'
+    - '*.apple.com'
+modules:
+- name: SubStore
+  url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/Egern.yaml
+  enabled: true
+- name: 节点信息
+  url: https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/net-lsp-x.sgmodule
+  enabled: true
+- name: 连通性测试
+  url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Connectivity_Test.sgmodule
+  enabled: true
+- name: ping面板
+  url: https://raw.githubusercontent.com/Keywos/rule/refs/heads/main/script/ping/ping.sgmodule
+  enabled: true
+- name: 网速测试
+  url: https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.sgmodule
+  enabled: true
+- name: 节假日信息
+  url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Timecard/Moore/Timecard.sgmodule
+  enabled: true
